@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <link rel="stylesheet" href="webportfolio.css">
+
+    <script src="webportfolio.js" defer></script>
+</head>
+<body>
+    
+    <div class="overlay"></div>
+    <video autoplay loop muted playsinline class="background-video">
+        <source src="videos/video1.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <div class="overlay"></div>
+
+    <div class="container">
+
+        <div class="navsection">
+            <div class="topbar">
+                <div class="topbar_content">
+                    <section class="phone">
+                        <i class="fa-solid fa-phone" ></i>
+                        <p>+254798206890</p>
+                        
+                    </section>
+                    <section class="email">
+                        <i class="fa-solid fa-envelope"></i>
+                        <p>kyeemcode@gmail.com</p>
+                    </section>
+                </div>
+            </div>
+
+            <div class="bottombar">
+                
+                <div class="logo">
+                    <img src="" alt="" srcset="">
+                    <h1>Kyeem <span style="color: purple; font-size: 25px; font-style: italic;" >Code</span></h1>
+                </div>
+
+                <div class="navlinks">
+
+                    <ul>
+                        <li><a href="webportfolio.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="resume.html">Resume</a></li>
+                        <li><a href="aboutme.html">About</a></li>
+                        <li><a href="contacts.html">Contact</a></li>
+                    </ul>
+
+                </div>
+
+                <div class="hambarger">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+  
+            </div>  
+
+        </div>
+
+    </div>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Hi, I'm <span>Rosemary Kimani</span></h1>
+            <h2>I am a
+                 <span style="--i:6;" data-text="Front-End Developer">Front-End Developer</span>
+                 <span style="--i:5;" data-text="Web designer">Web designer</span>
+                 <span style="--i:4;" data-text="Graphic designer">Graphic designer</span>
+                 <span style="--i:3;" data-text="coder">Coder</span>
+                 <span style="--i:2;" data-text="Youtuber">Youtuber</span>
+                 <span style="--1:1;" data-text="Problem solver">Problem solver</span>
+                </h2>
+            <a href="#projects" class="btn">View My <span>Work</span></a>
+            <div class="socials">
+                <a href="https://twitter.com/yourprofile" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </a>
+                <a href="https://github.com/yourprofile" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a href="https://instagram.com/yourprofile" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://facebook.com/yourprofile" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+                <a href="https://whatsapp.com/yourprofile" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+
+            </div>
+
+            <div class="cv">Download cv</div>
+        </div>
+        <div class="hero-image">
+            <img src="images/profile.jpg" alt="Your Profile Picture">
+        </div>
+    </section>
+
+    <section class="projects" id="projects">
+        <h2>My Work</h2>
+        <div class="project-container">
+          <div class="project-card">
+            <img src="images/project1.jpg" alt="Project 1">
+            <div class="project-info">
+              <h3>Project 1 Title</h3>
+              <p>A brief description of the project.</p>
+              <a href="project-link.html" class="btn">View Project</a>
+            </div>
+          </div>
+          <div class="project-card">
+            <img src="images/project2.jpg" alt="Project 2">
+            <div class="project-info">
+              <h3>Project 2 Title</h3>
+              <p>A brief description of the project.</p>
+              <a href="project-link.html" class="btn">View Project</a>
+            </div>
+          </div>
+          <!-- Add more projects here -->
+        </div>
+      </section>
+      
+      <section class="testimonials" id="testimonials">
+        <h2>What People Say</h2>
+        <div class="testimonial-container">
+          <div class="testimonial">
+            <p>"Rosemary's web design skills are top-notch! She delivered an amazing website that exceeded our expectations."</p>
+            <h4>John Doe, CEO of Company</h4>
+          </div>
+          <div class="testimonial">
+            <p>"Incredible problem solver. She helped us build an efficient and responsive platform within tight deadlines."</p>
+            <h4>Jane Smith, Project Manager</h4>
+          </div>
+        </div>
+      </section>
+
+      <section class="skills" id="skills">
+        <h2>Skills</h2>
+        <div class="skills-container">
+          <div class="skill">
+            <h3>HTML</h3>
+            <div class="skill-bar">
+              <div class="progress" style="width: 90%"></div>
+            </div>
+          </div>
+          <div class="skill">
+            <h3>CSS</h3>
+            <div class="skill-bar">
+              <div class="progress" style="width: 85%"></div>
+            </div>
+          </div>
+          <!-- Add more skills here -->
+        </div>
+      </section>
+
+      <section class="cta">
+        <h2>Let’s Build Something Together!</h2>
+        <a href="#contact" class="cta-button">Get in Touch</a>
+      </section>
+
+      <footer class="footer">
+        <p>&copy; 2025 Rosemary Kimani | All rights reserved</p>
+        <div class="social-links">
+          <a href="https://twitter.com/yourprofile" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+          <a href="https://github.com/yourprofile" target="_blank"><i class="fa-brands fa-github"></i></a>
+          <!-- Add other social links -->
+        </div>
+      </footer>
+      
+      
+      
+
+      
+
+
+
+</body>
+</html>
