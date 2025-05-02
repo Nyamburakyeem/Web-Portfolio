@@ -277,37 +277,55 @@ section i{
 
 
 
+/* Styling for the hero content */
 .hero-content h3 {
   display: flex;
+  flex-wrap: wrap;
   gap: 10px;
+  font-size: 2rem;
 }
 
 .hero-content h3 span {
-  opacity: 0;
-  transform: translateY(20px);
-  color: #fca311; /* Accent color */
+  opacity: 0; /* Make text invisible initially */
+  transform: translateY(20px); /* Start slightly lower */
+  color: #fca311; /* Accent color (sunrise orange) */
   animation: fadeSlideIn 0.6s ease-out forwards;
-  animation-fill-mode: both;
+  animation-fill-mode: both; /* Retain styles after animation */
 }
 
+/* Staggered animation delays for each span based on '--i' */
 .hero-content h3 span:nth-child(1) {
-  animation-delay: 0.2s; /* Delay for the first span */
+  animation-delay: calc(0.2s * var(--i));
 }
 
 .hero-content h3 span:nth-child(2) {
-  animation-delay: 1s; /* Delay for the second span */
+  animation-delay: calc(0.2s * var(--i));
 }
 
 .hero-content h3 span:nth-child(3) {
-  animation-delay: 1.8s; /* Delay for the third span */
+  animation-delay: calc(0.2s * var(--i));
 }
 
+.hero-content h3 span:nth-child(4) {
+  animation-delay: calc(0.2s * var(--i));
+}
+
+.hero-content h3 span:nth-child(5) {
+  animation-delay: calc(0.2s * var(--i));
+}
+
+.hero-content h3 span:nth-child(6) {
+  animation-delay: calc(0.2s * var(--i));
+}
+
+/* Keyframes to animate fade and slide */
 @keyframes fadeSlideIn {
   to {
-    opacity: 1;
-    transform: translateY(0);
+    opacity: 1; /* Make text visible */
+    transform: translateY(0); /* Slide to original position */
   }
 }
+
 
 
 
