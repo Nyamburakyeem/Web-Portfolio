@@ -8,8 +8,9 @@ This is my personal web development portfolio showcasing my projects, skills, an
 
 ## 📸 Screenshot
 
-![Portfolio Screenshot](screenshot.png)  
-*(You can add a real screenshot of your site here later)*
+![Screenshot of my portfolio](screenshot.png)
+
+
 
 ## 🛠️ Technologies Used
 
