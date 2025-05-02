@@ -8,7 +8,7 @@ This is my personal web development portfolio showcasing my projects, skills, an
 
 ## 📸 Screenshot
 
-![Screenshot of my portfolio](screenshot.png)
+![Screenshot of my portfolio](websitescreenshot.png)
 
 
 
