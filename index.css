@@ -293,6 +293,7 @@ section i{
   color: #fca311; /* Accent color (sunrise orange) */
   animation: fadeInSlide 3s ease-in-out forwards;
   white-space: nowrap; /* Ensure no wrapping */
+    top:0;
 }
 
 /* Sequential animation delay for each span */
