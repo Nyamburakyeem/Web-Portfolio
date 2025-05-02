@@ -276,28 +276,26 @@ section i{
 }
 
 
-/* Styling for the hero content */
+/* Hero Content */
 .hero-content h3 {
   position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   font-size: 2rem;
-  height: 1.2em; /* Set to match the size of a single line */
-  width: max-content; /* To prevent the text from being constrained */
-  overflow: hidden; /* Ensure that only one span is visible at a time */
+  display: inline-block; /* Allows each span to be positioned inline */
+  white-space: nowrap; /* Ensures the text doesn't break into multiple lines */
+  overflow: hidden; /* Hides spans that are not in view */
 }
 
+/* Style for the spans inside the h3 */
 .hero-content h3 span {
   position: absolute;
-  opacity: 0; /* Make text invisible initially */
-  transform: translateX(-50px); /* Start from left offscreen */
-  animation: fadeInSlide 3s ease-in-out infinite;
+  opacity: 0; /* Initially invisible */
+  transform: translateX(-50px); /* Start from offscreen to the left */
   color: #fca311; /* Accent color (sunrise orange) */
-  white-space: nowrap; /* Prevent text from breaking into multiple lines */
+  animation: fadeInSlide 3s ease-in-out forwards;
+  white-space: nowrap; /* Ensure no wrapping */
 }
 
-/* Sequential animation for each span */
+/* Sequential animation delay for each span */
 .hero-content h3 span:nth-child(1) {
   animation-delay: 0s;
 }
@@ -317,15 +315,15 @@ section i{
   animation-delay: 20s;
 }
 
-/* Keyframes for fade-in and slide-in effect */
+/* Keyframes for the fade and slide effect */
 @keyframes fadeInSlide {
   0% {
     opacity: 0;
-    transform: translateX(-50px); /* Slide from left */
+    transform: translateX(-50px); /* Start from left */
   }
   10% {
     opacity: 1;
-    transform: translateX(0); /* Slide to center */
+    transform: translateX(0); /* Move to the center */
   }
   90% {
     opacity: 1;
@@ -333,11 +331,9 @@ section i{
   }
   100% {
     opacity: 0;
-    transform: translateX(50px); /* Slide out to the right */
+    transform: translateX(50px); /* Slide to the right */
   }
 }
-
-
 
 
 .hero-content .btn {
