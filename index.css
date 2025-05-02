@@ -294,7 +294,9 @@ section i{
 }
 
 
-
+.hero-content button{
+    border: none;
+}
 
 
 
