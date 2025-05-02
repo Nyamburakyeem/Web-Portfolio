@@ -276,22 +276,21 @@ section i{
 }
 
 
-/* Hero Content */
 .hero-content h3 {
-  position: relative;
-  font-size: 2rem;
-  display: inline-block; /* Allows each span to be positioned inline */
-  white-space: wrap; /* Ensures the text doesn't break into multiple lines */
-  overflow: hidden; /* Hides spans that are not in view */
-    
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    color: #ecd0e8;
+    letter-spacing: -1px;
+  
 }
 
-/* Style for the spans inside the h3 */
 .hero-content h3 span {
-  position: absolute;
-  opacity: 0; 
-  color: #fca311; /* Accent color (sunrise orange) */
-   
+    position: relative;
+    display: inline-block;
+    color: transparent;
+    -webkit-text-stroke: 0.07rem var(--secondary-color);
+    font-style: italic;
+    font-size: 30px;
 }
 
 
