@@ -276,55 +276,63 @@ section i{
 }
 
 
-
-/* Styling for the hero content */
 .hero-content h3 {
+  position: relative;
   display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
+  justify-content: center;
+  align-items: center;
   font-size: 2rem;
+  overflow: hidden; /* Hide other spans when they are not active */
+  height: 1.2em; /* Adjust the height of the container to match text size */
 }
 
 .hero-content h3 span {
-  opacity: 0; /* Make text invisible initially */
-  transform: translateY(20px); /* Start slightly lower */
-  color: #fca311; /* Accent color (sunrise orange) */
-  animation: fadeSlideIn 0.6s ease-out forwards;
-  animation-fill-mode: both; /* Retain styles after animation */
+  position: absolute;
+  opacity: 0;
+  transform: translateX(-50px);
+  animation: fadeSlideIn 3s ease-in-out infinite;
+  color: #fca311; /* Accent color */
 }
 
-/* Staggered animation delays for each span based on '--i' */
+/* Staggered animation for each span */
 .hero-content h3 span:nth-child(1) {
-  animation-delay: calc(0.2s * var(--i));
+  animation-delay: 0s;
 }
-
 .hero-content h3 span:nth-child(2) {
-  animation-delay: calc(0.2s * var(--i));
+  animation-delay: 3s;
 }
-
 .hero-content h3 span:nth-child(3) {
-  animation-delay: calc(0.2s * var(--i));
+  animation-delay: 6s;
 }
-
 .hero-content h3 span:nth-child(4) {
-  animation-delay: calc(0.2s * var(--i));
+  animation-delay: 9s;
 }
-
 .hero-content h3 span:nth-child(5) {
-  animation-delay: calc(0.2s * var(--i));
+  animation-delay: 12s;
 }
-
 .hero-content h3 span:nth-child(6) {
-  animation-delay: calc(0.2s * var(--i));
+  animation-delay: 15s;
 }
 
-/* Keyframes to animate fade and slide */
 @keyframes fadeSlideIn {
-  to {
-    opacity: 1; /* Make text visible */
-    transform: translateY(0); /* Slide to original position */
+  0% {
+    opacity: 0;
+    transform: translateX(-50px); /* Slide from left */
+  }
+  30% {
+    opacity: 1;
+    transform: translateX(0); /* Slide to center */
+  }
+  70% {
+    opacity: 1;
+    transform: translateX(0); /* Stay centered */
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(50px); /* Slide out to the right */
   }
 }
+
 
 
 
