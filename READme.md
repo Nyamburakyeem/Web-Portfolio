@@ -36,5 +36,12 @@ This is my personal web development portfolio showcasing my projects, skills, an
 
 - [GitHub](https://github.com/Nyamburakyeem)
 
+
+## 📬 Contact
+
+- Email: kyeemrosemary@gmail.com
+- GitHub: [@Nyamburakyeem](https://github.com/Nyamburakyeem)
+
+
 ---
 
