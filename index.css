@@ -289,55 +289,15 @@ section i{
 /* Style for the spans inside the h3 */
 .hero-content h3 span {
   position: absolute;
-  opacity: 0; /* Initially invisible */
-    transform: translateY(-100%);
-
+  opacity: 0; 
   color: #fca311; /* Accent color (sunrise orange) */
-  animation: fadeInSlide 3s ease-in-out forwards;
-  white-space: nowrap; /* Ensure no wrapping */
-    top:0;
-  
+   
 }
 
-/* Sequential animation delay for each span */
-.hero-content h3 span:nth-child(1) {
-  animation-delay: 0s;
-}
-.hero-content h3 span:nth-child(2) {
-  animation-delay: 4s;
-}
-.hero-content h3 span:nth-child(3) {
-  animation-delay: 8s;
-}
-.hero-content h3 span:nth-child(4) {
-  animation-delay: 12s;
-}
-.hero-content h3 span:nth-child(5) {
-  animation-delay: 16s;
-}
-.hero-content h3 span:nth-child(6) {
-  animation-delay: 20s;
-}
 
-/* Keyframes for the fade and slide effect */
-@keyframes fadeInSlide {
-  0% {
-    opacity: 0;
-    transform: translateX(-50px); /* Start from left */
-  }
-  10% {
-    opacity: 1;
-    transform: translateX(0); /* Move to the center */
-  }
-  90% {
-    opacity: 1;
-    transform: translateX(0); /* Stay centered */
-  }
-  100% {
-    opacity: 0;
-    transform: translateX(50px); /* Slide to the right */
-  }
-}
+
+
+
 
 
 .hero-content .btn {
