@@ -290,7 +290,8 @@ section i{
 .hero-content h3 span {
   position: absolute;
   opacity: 0; /* Initially invisible */
-  transform: translateX(-50px); /* Start from offscreen to the left */
+    transform: translateY(-100%);
+
   color: #fca311; /* Accent color (sunrise orange) */
   animation: fadeInSlide 3s ease-in-out forwards;
   white-space: nowrap; /* Ensure no wrapping */
