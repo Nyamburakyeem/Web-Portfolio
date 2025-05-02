@@ -281,7 +281,7 @@ section i{
   position: relative;
   font-size: 2rem;
   display: inline-block; /* Allows each span to be positioned inline */
-  white-space: nowrap; /* Ensures the text doesn't break into multiple lines */
+  white-space: wrap; /* Ensures the text doesn't break into multiple lines */
   overflow: hidden; /* Hides spans that are not in view */
 }
 
